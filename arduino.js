@@ -55,7 +55,7 @@ parser.on("data", async (data) => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/sensor/log",
+        "http://backend-sonar-rp73.vercel.app/api/sensor/log",
         {
           method: "POST",
           headers: {
