@@ -2,10 +2,10 @@ const mysql = require('mysql2/promise');
 require('dotenv').config();
 
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'sonar_db',
+  host: process.env.DB_HOST || 'sql105.infinityfree.com',
+  user: process.env.DB_USER || 'if0_42681185',
+  password: process.env.DB_PASSWORD || '5773adxTYN',
+  database: process.env.DB_NAME || 'if0_42681185_sonar_db',
   port: parseInt(process.env.DB_PORT || '3306'),
   waitForConnections: true,
   connectionLimit: 10,
